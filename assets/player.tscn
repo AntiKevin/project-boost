@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b5vvcmle4nqtm"]
 
-[ext_resource type="Script" uid="uid://c3gel4vrab8g3" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://c3gel4vrab8g3" path="res://assets/player.gd" id="1_4flbx"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_hqtel"]
 

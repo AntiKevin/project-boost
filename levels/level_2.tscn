@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b6nvqugycthue"]
 
-[ext_resource type="Script" uid="uid://bai0rylnhohbb" path="res://landing_pad.gd" id="1_pqqg8"]
-[ext_resource type="PackedScene" uid="uid://b5vvcmle4nqtm" path="res://player.tscn" id="2_0srwa"]
+[ext_resource type="Script" uid="uid://bai0rylnhohbb" path="res://assets/landing_pad.gd" id="1_pqqg8"]
+[ext_resource type="PackedScene" uid="uid://b5vvcmle4nqtm" path="res://assets/player.tscn" id="2_0srwa"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vonw3"]
 sky_top_color = Color(0.0046931515, 0.07069578, 0.18919358, 1)

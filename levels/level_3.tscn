@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://ba3c3rquymp07"]
 
-[ext_resource type="Script" uid="uid://bai0rylnhohbb" path="res://landing_pad.gd" id="1_hldmh"]
-[ext_resource type="PackedScene" uid="uid://b5vvcmle4nqtm" path="res://player.tscn" id="2_gew73"]
-[ext_resource type="PackedScene" uid="uid://cc6tab0ic7mnq" path="res://moving_obstacle.tscn" id="3_gew73"]
+[ext_resource type="Script" uid="uid://bai0rylnhohbb" path="res://assets/landing_pad.gd" id="1_hldmh"]
+[ext_resource type="PackedScene" uid="uid://b5vvcmle4nqtm" path="res://assets/player.tscn" id="2_gew73"]
+[ext_resource type="PackedScene" uid="uid://cc6tab0ic7mnq" path="res://assets/moving_obstacle.tscn" id="3_gew73"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vonw3"]
 sky_top_color = Color(0.0046931515, 0.07069578, 0.18919358, 1)
