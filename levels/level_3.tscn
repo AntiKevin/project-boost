@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ba3c3rquymp07"]
 
-[ext_resource type="Script" uid="uid://bai0rylnhohbb" path="res://assets/landing_pad.gd" id="1_hldmh"]
+[ext_resource type="Script" uid="uid://bai0rylnhohbb" path="res://scripts/landing_pad.gd" id="1_hldmh"]
 [ext_resource type="PackedScene" uid="uid://b5vvcmle4nqtm" path="res://assets/player.tscn" id="2_gew73"]
 [ext_resource type="PackedScene" uid="uid://cc6tab0ic7mnq" path="res://assets/moving_obstacle.tscn" id="3_gew73"]
 
