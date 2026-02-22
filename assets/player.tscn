@@ -1,6 +1,12 @@
 [gd_scene format=3 uid="uid://b5vvcmle4nqtm"]
 
 [ext_resource type="Script" uid="uid://c3gel4vrab8g3" path="res://scripts/player.gd" id="1_4flbx"]
+[ext_resource type="AudioStream" uid="uid://dbv731rvo0t6t" path="res://sfx/SFX - Death Explosion.ogg" id="2_3mip4"]
+[ext_resource type="PackedScene" uid="uid://ux6ivcx1ovdp" path="res://Particles/booster_particles.tscn" id="2_mxi64"]
+[ext_resource type="PackedScene" path="res://Particles/explosion_particles.tscn" id="2_nsdob"]
+[ext_resource type="AudioStream" uid="uid://dhh6rp56lb7ta" path="res://sfx/SFX - Success.ogg" id="3_insbl"]
+[ext_resource type="PackedScene" path="res://Particles/success_particles.tscn" id="3_yceh7"]
+[ext_resource type="AudioStream" uid="uid://bpbra8f0818d0" path="res://sfx/SFX - Main engine thrust.ogg" id="4_rug40"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_hqtel"]
 
@@ -21,5 +27,33 @@ mesh = SubResource("CylinderMesh_hqtel")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2072737978]
 shape = SubResource("CylinderShape3D_4flbx")
+
+[node name="ExplosionParticles" parent="." unique_id=1213797766 instance=ExtResource("2_nsdob")]
+
+[node name="SuccessParticles" parent="." unique_id=562047113 instance=ExtResource("3_yceh7")]
+
+[node name="BoosterParticles" parent="." unique_id=1974426200 instance=ExtResource("2_mxi64")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+emitting = false
+
+[node name="LeftBoosterParticles" parent="." unique_id=533955935 instance=ExtResource("2_mxi64")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, -1, 0)
+emitting = false
+
+[node name="RightBoosterParticles" parent="." unique_id=1076703671 instance=ExtResource("2_mxi64")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3, -1, 0)
+emitting = false
+
+[node name="DeathSFX" type="AudioStreamPlayer" parent="." unique_id=409925617]
+stream = ExtResource("2_3mip4")
+volume_db = -3.0
+
+[node name="SuccessSFX" type="AudioStreamPlayer" parent="." unique_id=1402829044]
+stream = ExtResource("3_insbl")
+volume_db = -3.0
+
+[node name="ThrustSFX" type="AudioStreamPlayer3D" parent="." unique_id=1392010734]
+stream = ExtResource("4_rug40")
+volume_db = -3.0
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
